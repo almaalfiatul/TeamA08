@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </head>
   <body>
     <header>
@@ -12,11 +14,108 @@
     <main>
     <!-- Awal Main -->
       
+    
+    <!-- Body -->
+      <div class="lesson-wrapper">
+      <div class="container">
+        <div class="lessons">
+          <div class="lesson">
+            <div>
+              <img src="calendar.png" width="150px" />
+            </div>
+            <span class="text-contents">Customize your event calendar</span>
+          </div>
+          <div class="lesson">
+            <div>
+              <img src="memories.png" width="150px" />
+            </div>
+            <span class="text-contents">Showcase your favorite memories</span>
+          </div>
+          <div class="lesson">
+            <div>
+              <img src="mail.png" width="150px" />
+            </div>
+            <span class="text-contents">Accept & manage your RSVPs</span>
+          </div>
+          <div class="lesson">
+            <div>
+              <img src="sosmed.png" width="150px" />
+            </div>
+            <span class="text-contents">Share with the people you love</span>
+          </div>
+          <!-- Tambahkan tag <div> untuk class clear -->
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="lessons">
+          <div class="lesson">
+            <div>
+              <img src="music.png" width="150px" />
+            </div>
+            <span class="text-contents"
+              >Light up your day with music and DJ</span
+            >
+          </div>
+          <div class="lesson">
+            <div>
+              <img src="food.png" width="150px" />
+            </div>
+            <span class="text-contents"
+              >Enjoy meal by the famous restaurant</span
+            >
+          </div>
+          <div class="lesson">
+            <div>
+              <img src="photo.png" width="150px" />
+            </div>
+            <span class="text-contents">Photography and Videography</span>
+          </div>
+          <div class="lesson">
+            <div>
+              <img src="cake.png" width="150px" />
+            </div>
+            <span class="text-contents">Delicious wedding cake</span>
+          </div>
+          <!-- Tambahkan tag <div> untuk class clear -->
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+      
     </main>
     <footer>
     <!-- Awal Footer -->
       
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      // Wrap every letter in a p
+      var textWrapper = document.querySelector(".lesson .text-contents");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime
+        .timeline({ loop: true })
+        .add({
+          targets: ".lesson .text-contents",
+          translateY: ["1.1em", 0],
+          translateZ: 0,
+          duration: 750,
+          delay: (el, i) => 50 * i,
+        })
+        .add({
+          targets: ".lesson",
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000,
+        });
+    </script>
   </body>
 </html>
       
