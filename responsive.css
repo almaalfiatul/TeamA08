@@ -1,22 +1,19 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
-  /* < Css Bagian Body >*/
-
-  /* < Css Bagian Header > */
-
-  /* < Css Bagian Main >*/
-
-  /* < Css Bagian Footer >*/
+    .lesson {
+        width: 50%;
+        margin-bottom: 50px;
+      }
 }
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
-  /* < Css Bagian Body >*/
+    .lesson {
+        width: 100%;
+      }
 
-  /* < Css Bagian Header > */
-
-  /* < Css Bagian Main >*/
-
-  /* < Css Bagian Footer >*/ 
+    header{
+        padding: 10px 20px;
+        flex-direction: column;
+    }
 }
-
