@@ -1,7 +1,22 @@
-/* < Css Bagian Body >*/
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  /* < Css Bagian Body >*/
 
-/* < Css Bagian Header > */
+  /* < Css Bagian Header > */
 
-/* < Css Bagian Main >*/
+  /* < Css Bagian Main >*/
 
-/* < Css Bagian Footer >*/
+  /* < Css Bagian Footer >*/
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  /* < Css Bagian Body >*/
+
+  /* < Css Bagian Header > */
+
+  /* < Css Bagian Main >*/
+
+  /* < Css Bagian Footer >*/ 
+}
+
