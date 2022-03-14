@@ -59,7 +59,83 @@ body {
   }
 }
 
+@media screen and (max-width: 670px) {
+    header{
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+}
+
 /* < Css Bagian Header > */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jumbotron img{
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background-color: #f0c362;
+    color: #6432096e;
+}
+
+
+header .logo {
+    position: relative;
+    font-size: 2.5em;
+    /* Ubahlah padding atas & bawah ke 20px, dan padding kiri & kanan ke 40px */
+    padding:15px 100px;
+    color: #6432096e;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header nav ul li a{
+    color: #6432096e;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 25px;
+    border: 1px solid #6432096e transparent;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    font-family: monospace;
+    padding: 10px 25px;
+}
+
+header nav ul li a:hover{
+    background-color: rgb(247, 177, 86);
+    color: #6432096e;
+}
 
 /* < Css Bagian Main >*/
 
