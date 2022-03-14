@@ -1,4 +1,63 @@
 /* < Css Bagian Body >*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+  background: rgb(181, 114, 114);
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+.lesson-wrapper {
+  padding-bottom: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: left;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+  position: relative;
+  font-weight: 500;
+  font-size: 3.3em;
+}
+
+.lesson .text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 30px;
+  color: #871247;
+}
+
+@media (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 670px) {
+  .lesson {
+    width: 100%;
+  }
+}
 
 /* < Css Bagian Header > */
 
