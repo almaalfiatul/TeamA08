@@ -123,14 +123,6 @@ header nav ul li a:hover{
 /* < Css Bagian Main >*/
 
 /* < Css Bagian Footer >*/
-footer{
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: #001e33;
-    color: #fff;
-}
-
 .footer-content{
     display: flex;
     align-items: center;
@@ -139,18 +131,83 @@ footer{
     text-align: center;
 }
 
-.footer-content h3{
-    font-size : 17px;
-    font-family: Segoe Script;
-}
-
 footer img{
-   height: 50px;
-   width: 100px;
+   height: 32px;
+   width: 75px;
+ }
+
+ footer{
+     background-color: #EBEDEF ;
  }
  
+ footer h2{
+     text-align: center;
+    font-family: Ananda;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
  footer p, a{
      color: #b3aeb5;
-     font-size: 11px;
+     font-size: 12px;
      font-family: Century Gothic;
  }
+
+body,h1,h2,h3,h4 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,h2,h3,h4,p,a {
+    text-decoration: none;
+    color: black;
+    font-family: Century Gothic;
+  }
+  
+  .footer-col a {
+    color: rgba(0,0,0,0.75);
+  }
+  
+  .content {
+    height: 80vh;
+    background: #ccc;
+  }
+  
+  .footer-content-wrapper {
+    width: 80%;
+    margin: 1em auto;  
+  }
+  
+  .footer-col {
+    display: inline-block;
+    padding: 0.5em 0.1em 0.5em 1em;
+    box-sizing: border-box;
+    border-right: solid 1px #bbb;
+  }
+  .footer-col:nth-child(4) {
+    border: none;
+  }
+  
+  .ta-l {
+    text-align: left;
+  }
+  .flt {
+    float: left;
+  }
+  
+  .flt:nth-child(4):after {
+     content: " "; 
+     visibility: hidden; 
+     display: block; 
+     height: 1em; 
+     clear: both;
+  }
+  
+  .large-25 {
+    width: 25%;
+  }
+  
+  .footer-col a {
+    display: block;
+    margin: 0.3em 0;
+  }
