@@ -4,6 +4,13 @@
         width: 50%;
         margin-bottom: 50px;
       }
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
 }
 
 /* Untuk Smartphone */
@@ -11,10 +18,33 @@
     .lesson {
         width: 100%;
       }
-
-    header{
-        padding: 10px 20px;
-        flex-direction: column;
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #b3c9da;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background-color: #62717c;
+        color: #001e33;
+    }
+    #check:checked ~ ul{
+        left: 0;
     }
     
     /* footer */
