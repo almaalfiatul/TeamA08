@@ -16,4 +16,22 @@
         padding: 10px 20px;
         flex-direction: column;
     }
+    
+    /* footer */
+    .small-50 {
+      width: 50%;  
+    }
+    .footer-col:nth-child(2) {
+      border: none;
+    }
 }
+
+/* footer */
+@media (max-width: 300px) {
+    .tiny-100 {
+      width: 100%;
+    }
+    .footer-col { 
+      border: none;
+    }
+  }
